@@ -1,0 +1,416 @@
+/********************************* Основные стили сайта ******/
+
+html, body {
+    height: 100%; /* высота HTML и BODY */
+    margin: 0; /* убираем поля по краям страницы */
+    padding: 0;
+	min-height: 100%;
+}
+
+body {
+	background-image: url(images/fon300.jpg);
+	background-attachment: fixed, fixed;
+	padding: 0;
+	margin: 0;
+	/*font: ProtoSans56 24pt;*/
+	font: 16/24px Arial, Tahoma, sans-serif;
+	/*font: ProtoSans56 24pt;*/
+	color: #272727;
+}
+
+.page-wrapper {
+	position: relative;
+	min-height: 100%; /* минимальная высота обертки */
+	width: 800px;
+	height: auto !important; /* для всех браузеров */
+	height: 100%; /* для IE6, т.к. он понимает height, как min-height */
+	position: relative; /* позиционируем относительно этого блока */
+	/*margin: 20px 20px 10px 20px;*/
+	margin:0 auto;
+}
+
+
+/**************************** Шапка сайта */
+
+.header {
+	background-color: #BEBECE; /*#1EBECE*/
+	border: 1px #BBB;
+	opacity: 0.95;
+	margin-bottom: 20px; 
+	padding: 10px 10px;
+}
+
+
+/***************************** Главное меню */
+
+.menu {	
+	margin-bottom: 10px;
+	padding: 20px 0px;
+	background-color: #BEBECE;
+	border: 1px #111;
+	opacity: 0.95;
+	border-radius: 40px 40px 0 0;
+	width: 100%
+}
+
+.link-menu {
+    color: #222;
+    background-color: #d1c863; /*#1EBECE*/
+	padding: 8px 8px;
+    border: 2px solid gray;
+    text-decoration: none;
+    font-family: "Verdana","Arial","Helvetica",sans-serif;
+    font-weight: 600;
+}
+
+.link-menu:hover {
+	color: #BEBECE;
+}
+
+div.content-wrapper {
+	font-family: "Verdana","Arial","Helvetica",sans-serif;
+	background-color: #BEBECE;
+	border: 1px #666;
+	opacity: 0.95;
+	padding: 20px 0px;
+	width: 100% 
+}
+
+.form {
+	padding: 20px 20px 20px 20px;
+	background-color: rgba(255, 0, 0, 0.0);
+}
+
+.bottom{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	height: 80px;
+}
+
+footer {		
+	border-bottom: none;	
+	padding: 20px 20px; 
+	background-color: #BEBECE;
+	border: 1px #BBB;
+	opacity: 0.95;	
+}
+
+/***************************** Главная Страница */
+
+div.clock-wrapper {
+	width: 300px;
+	background-color: transparent;
+	margin-bottom: 15px;
+}
+
+div.clock-wrapper form {
+	background-color: transparent;
+}
+
+div.img1 {
+	float: left;
+	padding-right: 10px;
+}
+
+div.img2 {
+	float: right;
+	padding-left: 10px;
+}
+
+div.clearFloat {
+	clear: both;
+}
+/***************************** Страница вход/регистрация сайта */
+
+.log-sign-wrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+
+form {
+	background-color: beige;
+	font-size: 15px;
+	text-align: center;
+}
+
+.sign-select-country {
+	width: 173px;
+}
+
+fieldset {
+	border: 2px solid #cc0000;
+	background-color: beige;
+}
+
+legend {
+	font-size: 20px;
+}
+
+label {
+	width: 110px;
+	display: inline-block;
+}
+
+.form-sign label {
+	width: 80px;
+}
+
+.chat-wrapper {
+	width: 300px;
+	height: 200px;
+	margin: 10px auto;
+	border: 2px solid red;
+}
+
+.input-chat-wrapper {
+	margin-top: 170px;
+}
+
+div.table-login-wrapper {
+	width: 400px;
+	border: 2px solid black;
+	padding: 10px 10px;
+	margin: 20px auto;
+}
+
+div.table-login-wrapper table th {
+	border: 2px solid gray;
+	padding: 10px 10px;
+}
+
+div.table-sign-wrapper {
+	width: 400px;
+	border: 2px solid black;
+	padding: 10px 10px;
+	margin: 20px auto;
+}
+
+div.table-sign-wrapper table th {
+	border: 2px solid gray;
+	padding: 10px 10px;
+}
+
+/***************************** Страница Товары */
+
+div.product-wrapper a {
+	text-decoration: none;
+}
+
+div.product-wrapper {
+	min-height: 100px;
+	width: 99.7%;
+	border: 2px solid yellow;
+	text-align: center;
+}
+
+div.product-wrapper a {
+	color: black;
+}
+
+div.frame-product {
+	width: 330px;
+	height: 250px;
+	margin: 20px 50px;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+div.frame-product:hover { opacity: 0.9; color: orange; }
+
+div.product-text {
+	font-style: italic;
+}
+
+
+/***************************** Страница О Товарах */
+
+.table-style {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.table-style caption {
+	padding: 10px 10px;
+	border: 2px solid red;
+}
+
+.table-style tr th {
+	padding: 10px 10px;
+	border: 3px solid gray;
+}
+
+.table-style td {
+	padding: 10px 10px;
+	border: 3px solid gray;
+}
+
+div.table-wrapper {
+	width: 96.7%;
+	padding: 20px 20px;
+	border: 2px solid yellow;
+}
+
+/***************************** Страница Контакты */
+
+div.about-company {
+	width: 500px;
+	margin: 0 auto;
+	border: 2px solid gray;
+	background: white;
+	text-align: center;
+}
+
+div.about-company ul {
+	list-style: none;
+}
+
+
+/***************************** Страница о магазине */
+
+div.about-shop-text {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	border: 2px solid gray;
+	background: white;
+}
+
+
+/***************************** Разделы внизу сайта */
+
+div.widjet-wrapper {
+	border: 2px solid black;
+	margin: 10px 20px;
+	padding: 20px 20px;
+	background: #efefef;
+	text-align: center;
+}
+
+div.widjet-wrapper a {
+	text-decoration: none;
+}
+
+div.frame-section {
+	width: 340px;
+	height: 150px;
+	margin: 0 20px;
+	border: 2px solid black;
+	display: inline-block;
+	background: orange;
+	color: white;
+}
+
+div.frame-section:hover { opacity: 0.5; }
+
+div.widjet-text {
+	font-style: italic;
+}
+
+/* * * * * * * * * * * * *  Registration  * * * * * * * * * * * * *  */
+.container {
+  margin: 1% auto;
+  width: 75%;
+  border: 1px solid #E5E2E5;
+  -webkit- border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.container.one {
+  font-weight: bold;
+  padding: 3%;
+}
+span, input, label, img {
+  display: inline-block;
+}
+input {
+  margin: 1%;
+  padding: 0.8%;
+  border: 1px solid #BEBEBE;
+  width: 45%;
+}
+label, img {    
+  width: 6.5em;
+}
+.captcha label {  
+  width: 15em;
+  margin: 2.5em 0 1em 0;
+}
+.captcha img {  
+  height: 2em; 
+  vertical-align: middle;
+}
+label {
+  position: relative;
+}
+
+input ~ span::after {
+  content: ''; 
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+
+/* Раскрашиваем input в фокусе */
+input:focus ~ span::after,
+input:focus:valid ~ span::after,
+input:focus:invalid ~ span::after {
+  content: '';
+} 
+
+/* Раскрашиваем корректные input  */
+input:valid ~ span::after {
+  content: '✓'; 
+  color: #4E9B5A;
+}
+
+/* Раскрашиваем ошибочные input */
+input:invalid ~ span::after {
+  content: '×';
+  color: #B11117;
+}
+.captcha input:invalid ~ span::after{
+  content:'× Неправильное число';
+}
+
+
+.container.two {
+  background-color: #E5E2E5;
+  padding: 1% 0 1% 12%;
+}
+button {
+  color: #fff;
+  background-color: #029E0A;
+  -webkit- border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8% 3%;
+  -webkit-background: linear-gradient(#018D09, #0BE100);
+  -moz-background: linear-gradient(#018D09, #0BE100);
+  -o-background: linear-gradient(#018D09, #0BE100);
+  background: linear-gradient(#018D09, #0BE100);
+  position: relative;
+  overflow: hidden;
+}
+button::before {
+  position: absolute;
+  content: '';
+  height: 50%;
+  width: 96%;
+  left: 2%;
+  top: 0.9px;
+  -webkit-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  -moz-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  -o-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  -webkit- border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+/* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  */

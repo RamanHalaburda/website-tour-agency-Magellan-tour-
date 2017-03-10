@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Magellan Tours - Туры. Туристические услуги.</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/jqscript.js"></script>
+</head>
+<body onload="datetime()">
+   <div class="page-wrapper">
+		
+<!-- Menu -->
+        <div align="center" class="menu">
+            <nav>
+                <a href="main.html" class="link-menu">Главная</a>
+                <a href="authorization.html" class="link-menu">Вход</a>
+				<a href="registration.html" class="link-menu">Регистрация</a>
+                <a href="tours.html" class="link-menu">Туры</a>
+                <a href="contacts.html" class="link-menu">Контакты</a>
+                <a href="calculate.html" class="link-menu">Расчитать</a>
+            </nav>
+        </div>
+		
+		<div class="content-wrapper">
+            <div class="menu-tour">
+                <div class="tour-rdbtn"><input name="tours" type="checkbox" value="rdbtn-tour" align="left" checked> Туры </div>
+                <div class="viza-rdbtn"><input name="tours" type="checkbox" value="rdbtn-viza" checked> Визы </div>
+                <div class="avia-rdbtn"><input name="tours" type="checkbox" value="rdbtn-avia" checked> Авиабилеты </div>
+            </div>
+
+<!-- Begin LIST of TOURS -->
+            <div class="tour">
+                <h4 align="center">Тур в Грецию</h4>
+                <div class="img-tour">
+                    <img src="css/images/t1.jpg" width="60%" alt="t1.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li>Виза: включена</li>
+                    <li>Отель: да</li>
+                    <li>Услуги: полный пакет услуг</li>                    
+                    <li>Питание: да</li>
+                    <li>Перелет: включен</li>
+                    <li><b>Цена</b>: 430$</li>
+                </ul>
+            </div>
+
+            <div class="tour">
+                <h4 align="center">Тур в Норвегию</h4>
+                <div class="img-tour">
+                    <img src="css/images/t2.jpg" width="60%" alt="t3.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li>Виза: включена</li>
+                    <li>Отель: нет</li>
+                    <li>Услуги: нет</li>                    
+                    <li>Питание: нет</li>
+                    <li>Перелет: включен</li>
+                    <li><b>Цена</b>: 260$</li>
+                </ul>
+            </div>
+
+            <div class="tour">
+                <h4 align="center">Тур в Грецию</h4>
+                <div class="img-tour">
+                    <img src="css/images/t3.jpg" width="60%" alt="t3.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li>Виза: включена</li>
+                    <li>Отель: да</li>
+                    <li>Услуги: полный пакет услуг</li>                    
+                    <li>Питание: нет</li>
+                    <li>Перелет: включен</li>
+                    <li><b>Цена</b>: 500$</li>
+                </ul>
+            </div>
+
+            <div class="viza">
+                <h4 align="center">Шенген</h4>
+                <div class="img-tour">
+                    <img src="css/images/v1.jpg" width="60%" alt="v1.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: 70$</li>
+                </ul>
+            </div>
+
+            <div class="viza">
+                <h4 align="center">Green Card (Грин-карта)</h4>
+                <div class="img-tour">
+                    <img src="css/images/v2.jpg" width="60%" alt="v2.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: 200$</li>
+                </ul>
+            </div>
+
+            <div class="viza">
+                <h4 align="center">Виза в Израиль</h4>
+                <div class="img-tour">
+                    <img src="css/images/v3.jpg" width="60%" alt="v3.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: 150$</li>
+                </ul>
+            </div>
+
+            <div class="avia">
+                <h4 align="center">Авиаилеты в Южную Америку</h4>
+                <div class="img-tour">
+                    <img src="css/images/a1.jpg" width="60%" alt="a1.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: от 421$</li>
+                </ul>
+            </div>
+
+            <div class="avia">
+                <h4 align="center">Авиабилеты в Северную Америку</h4>
+                <div class="img-tour">
+                    <img src="css/images/a2.jpg" width="60%" alt="a2.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: от 378$</li>
+                </ul>
+            </div>
+
+            <div class="avia">
+                <h4 align="center">Авиабилеты в Европу</h4>
+                <div class="img-tour">
+                    <img src="css/images/a3.jpg" width="60%" alt="a3.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: от 34$</li>
+                </ul>
+            </div>
+
+            <div class="avia">
+                <h4 align="center">Авиабилеты в Азию</h4>
+                <div class="img-tour">
+                    <img src="css/images/a4.jpg" width="60%" alt="a4.jpg">
+                </div>
+                <ul class="list-tour">
+                    <li><b>Цена</b>: от 211$</li>
+                </ul>
+            </div>
+<!-- End LIST of TOURS -->
+		</div>
+        
+        
+<!-- Footer -->
+        <div class="bottom">
+        	<footer>
+        		<div>
+                    <object width="959px"> <param value="css/images/banner.swf"> <embed src="css/images/banner.swf" width="959px" height="119px"></embed> </object>
+                </div>
+        	</footer>
+        </div>
+
+<!-- Begin Chat (www.cbox.ws - v001) -->
+        <div class="chat"> 
+            <div>
+                <iframe class="iframe_textbox" 
+                    frameborder="0" 
+                    width="200" 
+                    height="500" 
+                    src="https://www7.cbox.ws/box/?boxid=814802&boxtag=qZPhXt" 
+                    marginheight="2" 
+                    marginwidth="2" 
+                    scrolling="auto" 
+                    allowtransparency="yes" 
+                    name="cboxmain" 
+                    style="border: 1px solid;"
+                    background-color: #BEBECE; 
+                    id="cboxmain"> 
+                </iframe>
+            </div> 
+        </div> 
+<!-- End Chat --> 
+        <div class="clock"> 
+                <form name="form_clock">
+                    Дата: <input id="inputdate" name="date" type="text" name="date" value="" size="22" disabled="true">
+                    <br>
+                    Время: <input id="inputtime" name="time" type="text" name="time" value="" size="4" disabled="true">
+                </form> 
+        </div>    
+</div>
+</body>
+</html>

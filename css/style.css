@@ -1,0 +1,258 @@
+/* * * * * * * * * * * * * * * * Main styles  * * * * * * * * * * * * *  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+    height: 100%; /* высота HTML и BODY */
+    margin: 0; /* убираем поля по краям страницы */
+    padding: 0;
+	min-height: 100%;
+	background-image: url(images/fon400.jpg);
+}
+
+.page-wrapper {
+	/* тип отображения - flex, влияет на то, как будут вести себя дочерние блоки (http://html5.by/blog/flexbox/) */
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	min-height: 100%; /* минимальная высота обертки */
+	padding: 0 10px; /* оставляет по 10px справа и слева, если сжать окно браузера */
+	margin:0 auto;
+}
+
+/* на широких экранах контент становится шире, можешь подредактировать числа либо убрать */
+@media (min-width: 1240px) {
+	.page-wrapper {
+		width: 1000px;
+	}
+}
+
+/* * * * * * * * * * * * * * * * Header  * * * * * * * * * * * * *  */
+
+.header {
+	background-color: #BEBECE; /*#1EBECE*/
+	border: 1px #BBB;
+	opacity: 0.95;
+	margin-bottom: 20px; 
+	padding: 10px 10px;
+}
+
+/* * * * * * * * * * * * * * * * Main menu  * * * * * * * * * * * * *  */
+
+.menu {	
+	margin: 10px 0;
+	padding: 20px 0px;
+	background-color: #BEBECE;
+	border: 1px #111;
+	opacity: 0.95;
+	border-radius: 40px 40px 0 0;
+}
+
+.link-menu {
+    color: #222;
+    background-color: #d1c863; /*#1EBECE*/
+	padding: 8px 8px;
+    border: 2px solid gray;
+    text-decoration: none;
+    font-family: "Verdana","Arial","Helvetica",sans-serif;
+    font-weight: 600;
+}
+
+.link-menu:hover {
+	color: #BEBECE;
+}
+
+/* * * * * * * * * * * * * * * * Main page  * * * * * * * * * * * * *  */
+
+div.content-wrapper {
+	flex-grow: 1; /* отличное от нуля значение заставляет блок расти за счёт свободного места */
+	font-family: "Verdana","Arial","Helvetica",sans-serif;
+	background-color: #BEBECE;
+	border: 1px #666;
+	opacity: 0.95;
+	padding: 20px;
+}
+
+.form {
+	padding: 20px 20px 20px 20px;
+	background-color: rgba(255, 0, 0, 0.0);
+	text-align: center;
+}
+
+.list-with {
+	margin-left: 20%;
+}
+
+/* * * * * * * * * * * * * * * * Footer  * * * * * * * * * * * * *  */
+
+.bottom{
+	margin-top: 10px;
+}
+
+footer {		
+	border-bottom: none;	
+	padding: 20px 20px; 
+	background-color: #BEBECE;
+	border: 1px #BBB;
+	opacity: 1;	
+	margin-bottom: 10px
+}
+
+/* * * * * * * * * * * * * * * * Chat  * * * * * * * * * * * * *  */
+
+.chat {	
+	position: fixed;
+	text-align: center; 
+	line-height: 0;
+	top: 10px; 
+	right: 10px; 
+	background: #BEBECE;
+	opacity: 0.95;
+}
+
+.clock {
+	position: fixed;	
+	text-align: right; 
+	line-height: 0;
+	top: 10px; 
+	left: 10px; 
+	background: #BEBECE;
+	opacity: 0.95;
+	border-radius: 5px;
+}
+
+/* * * * * * * * * * * * * * * * Tours  * * * * * * * * * * * * *  */
+.menu-tour, .tour, .viza, .avia {
+	padding: 20px;
+	border: 2px solid gray;
+	margin-bottom: 20px;
+}
+
+.img-tour {
+	text-align: center;
+}
+
+.list-tour {
+	margin-left: 15%;
+}
+
+/* * * * * * * * * * * * * * * * About  * * * * * * * * * * * * *  */
+
+.list-contacts {
+	text-align: center;
+	list-style: none;
+}
+
+/* * * * * * * * * * * * * * * * Registration  * * * * * * * * * * * * *  */
+
+.container {
+	margin: 1% auto;
+	width: 75%;
+	border: 1px solid #E5E2E5;
+	-webkit- border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.container.one {
+	font-weight: bold;
+	padding: 3%;
+}
+span, input, label, img {
+	display: inline-block;
+}
+input {
+	margin: 1%;
+	padding: 0.8%;
+	border: 1px solid #BEBEBE;
+	width: 45%;
+}
+label {    
+ 	width: 6.5em;
+}
+
+.img-captcha {
+	width: 6.5em;
+}
+
+.captcha label {  
+	width: 15em;
+	margin: 2.5em 0 1em 0;
+}
+.captcha img {  
+	height: 2em; 
+	vertical-align: middle;
+}
+label {
+	position: relative;
+}
+
+input ~ span::after {
+	content: ''; 
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+/* Раскрашиваем input в фокусе */
+input:focus ~ span::after,
+input:focus:valid ~ span::after,
+input:focus:invalid ~ span::after {
+	content: '';
+} 
+
+/* Раскрашиваем корректные input  */
+input:valid ~ span::after {
+	content: '✓'; 
+	color: #4E9B5A;
+}
+
+/* Раскрашиваем ошибочные input */
+input:invalid ~ span::after {
+	content: '×';
+	color: #B11117;
+}
+.captcha input:invalid ~ span::after{
+	content:'× Неправильное число';
+}
+
+.container.two {
+	background-color: #E5E2E5;
+	padding: 1% 0 1% 12%;
+}
+button {
+	color: #fff;
+	background-color: #029E0A;
+	-webkit- border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	border-radius: 25px;
+	border: none;
+	padding: 0.8% 3%;
+	-webkit-background: linear-gradient(#018D09, #0BE100);
+	-moz-background: linear-gradient(#018D09, #0BE100);
+	-o-background: linear-gradient(#018D09, #0BE100);
+	background: linear-gradient(#018D09, #0BE100);
+	position: relative;
+	overflow: hidden;
+}
+button::before {
+	position: absolute;
+	content: '';
+	height: 50%;
+	width: 96%;
+	left: 2%;
+	top: 0.9px;
+	-webkit-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+	-moz-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+	-o-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+	-webkit- border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	border-radius: 25px;
+}
+/* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  *//* * * * * * * * * * * * *  */

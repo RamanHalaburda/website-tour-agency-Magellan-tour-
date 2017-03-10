@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Magellan Tours - Авторизация. Туристические услуги.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/psp_script.js"></script>
+</head>
+<body onload="datetime()">
+   <div class="page-wrapper">
+
+<!-- Menu -->
+        <div align="center" class="menu">
+            <nav>
+                <a href="main.html" class="link-menu">Главная</a>
+                <a href="authorization.html" class="link-menu">Вход</a>
+				<a href="registration.html" class="link-menu">Регистрация</a>
+                <a href="tours.html" class="link-menu">Туры</a>
+                <a href="contacts.html" class="link-menu">Контакты</a>
+                <a href="calculate.html" class="link-menu">Расчитать</a>
+            </nav>
+        </div>
+		
+		<div class="content-wrapper">
+    		<form class="form">
+                <p><label for="email">Эл. почта</label>
+                    <input type="email" name="email"><span></span></p>
+
+                <p><label for="password">Пароль</label>
+                    <input type="password" class="passinp" name="password" oninput="limitText(this)"><span></span></p> 
+
+    		    <button type="submit" onclick=foo_aut()>Войти</button>
+            </form>
+		</div>	
+
+<!-- Footer -->
+        <div class="bottom">
+        	<footer>
+        		<div>
+                    <object width="959px"> <param value="css/images/banner.swf"> <embed src="css/images/banner.swf" width="959px" height="119px"></embed> </object>
+                </div>
+        	</footer>
+        </div>
+
+        <div class="clock"> 
+                <form name="form_clock">
+                    Дата: <input id="inputdate" name="date" type="text" name="date" value="" size="22" disabled="true">
+                    <br>
+                    Время: <input id="inputtime" name="time" type="text" name="time" value="" size="4" disabled="true">
+                </form> 
+        </div> 
+    </div>
+</body>
+</html>
